@@ -19,7 +19,7 @@ stages:
       - CLASSES
       - INCLUDE_TOP
     outs:
-      - artifacts/prepare_base_model/base_model.h5
+      - artifacts/prepare_base_model
   
 
   training:
@@ -38,7 +38,7 @@ stages:
     outs:
       - artifacts/training/trained_model.h5
 
-  evaluation:
+  evoluation:
     cmd: python src/cnnClassifier/pipeline/stage_04_model_evolution_mlflow.py
     deps:
       - src/cnnClassifier/pipeline/stage_04_model_evolution_mlflow.py

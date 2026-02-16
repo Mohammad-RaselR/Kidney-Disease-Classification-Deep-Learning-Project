@@ -45,8 +45,7 @@ except Exception as e:
 
 STAGE_NAME="Model Evolution with Mlflow Stage"
 try:
-    dagshub.init(repo_owner='mrhrasel232', repo_name='Kidney-Disease-Classification-Deep-Learning-Project', mlflow=True)
-
+    
     logger.info(f">>>>stage {STAGE_NAME} started <<<<<")
     obj=ModelEvolutionMlflowPipeline()
     obj.main()
