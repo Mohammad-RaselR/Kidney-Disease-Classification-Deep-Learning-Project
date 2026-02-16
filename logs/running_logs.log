@@ -1187,3 +1187,74 @@ x=========x]
 [2026-02-15 23:43:01,359: INFO: main: >>>>stage Model Evolution with Mlflow Stage completed <<<<<
 
 x=========x]
+[2026-02-16 00:26:11,107: INFO: stage_01_data_ingestion: >>>>stage Data Ingestion Stage  started <<<<<]
+[2026-02-16 00:26:11,110: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 00:26:11,112: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 00:26:11,112: INFO: common: created directory at: artifacts]
+[2026-02-16 00:26:11,112: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-16 00:26:11,113: INFO: data_ingestion: Downloading form data https://drive.google.com/file/d/15C-VzAvERycouqPB1M6SaY8sGitCBoN5/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-16 00:26:29,336: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/15C-VzAvERycouqPB1M6SaY8sGitCBoN5/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-16 00:26:29,732: INFO: stage_01_data_ingestion: >>>>stage Data Ingestion Stage  completed <<<<<
+
+x=========x]
+[2026-02-16 00:27:25,677: INFO: stage_01_data_ingestion: >>>>stage Data Ingestion Stage  started <<<<<]
+[2026-02-16 00:27:25,679: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 00:27:25,680: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 00:27:25,680: INFO: common: created directory at: artifacts]
+[2026-02-16 00:27:25,681: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-16 00:27:25,681: INFO: data_ingestion: Downloading form data https://drive.google.com/file/d/15C-VzAvERycouqPB1M6SaY8sGitCBoN5/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-16 00:27:43,711: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/15C-VzAvERycouqPB1M6SaY8sGitCBoN5/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-16 00:27:44,119: INFO: stage_01_data_ingestion: >>>>stage Data Ingestion Stage  completed <<<<<
+
+x=========x]
+[2026-02-16 00:27:48,640: INFO: stage_02_prepare_base_model: >>>>stage Prepare Base Model started <<<<<]
+[2026-02-16 00:27:48,640: ERROR: stage_02_prepare_base_model: name 'PrepareBaseModelPipeline' is not defined]
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_02_prepare_base_model.py", line 26, in <module>
+    obj=PrepareBaseModelPipeline()
+NameError: name 'PrepareBaseModelPipeline' is not defined
+[2026-02-16 00:30:34,214: INFO: stage_02_prepare_base_model: >>>>stage Prepare Base Model started <<<<<]
+[2026-02-16 00:30:34,216: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 00:30:34,218: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 00:30:34,218: INFO: common: created directory at: artifacts]
+[2026-02-16 00:30:34,218: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-02-16 00:30:34,547: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-02-16 00:30:36,746: INFO: stage_02_prepare_base_model: >>>>stage Prepare Base Model completed <<<<<
+
+x=========x]
+[2026-02-16 00:30:40,413: INFO: stage_03_model_training: >>>>stage Model Training Stage started <<<<<]
+[2026-02-16 00:30:40,415: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 00:30:40,416: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 00:30:40,417: INFO: common: created directory at: artifacts]
+[2026-02-16 00:30:40,417: INFO: common: created directory at: artifacts/training]
+[2026-02-16 00:31:37,449: INFO: stage_03_model_training: >>>>stage Model Training Stage started <<<<<]
+[2026-02-16 00:31:37,452: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 00:31:37,453: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 00:31:37,453: INFO: common: created directory at: artifacts]
+[2026-02-16 00:31:37,454: INFO: common: created directory at: artifacts/training]
+[2026-02-16 00:32:03,185: INFO: stage_03_model_training: >>>>stage Model Training Stage started <<<<<]
+[2026-02-16 00:32:03,188: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 00:32:03,190: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 00:32:03,190: INFO: common: created directory at: artifacts]
+[2026-02-16 00:32:03,191: INFO: common: created directory at: artifacts/training]
+[2026-02-16 00:58:15,851: INFO: stage_03_model_training: >>>>stage Model Training Stage completed <<<<<
+
+x=========x]
+[2026-02-16 00:58:20,606: INFO: stage_04_model_evolution_mlflow: >>>>stage Model Evolution with Mlflow Stage started <<<<<]
+[2026-02-16 00:58:20,609: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 00:58:20,610: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 00:58:20,610: INFO: common: created directory at: artifacts]
+[2026-02-16 00:58:45,755: INFO: common: json file saved at: source.json]
+[2026-02-16 00:58:45,756: INFO: common: json file saved at: source.json]
+[2026-02-16 00:58:45,756: INFO: stage_04_model_evolution_mlflow: >>>>stage Model Evolution with Mlflow Stage completed <<<<<
+
+x=========x]
+[2026-02-16 09:48:55,984: INFO: stage_04_model_evolution_mlflow: >>>>stage Model Evolution with Mlflow Stage started <<<<<]
+[2026-02-16 09:48:55,987: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-02-16 09:48:55,988: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-16 09:48:55,989: INFO: common: created directory at: artifacts]
+[2026-02-16 09:49:20,117: INFO: common: json file saved at: source.json]
+[2026-02-16 09:49:20,118: INFO: common: json file saved at: source.json]
+[2026-02-16 09:49:20,118: INFO: stage_04_model_evolution_mlflow: >>>>stage Model Evolution with Mlflow Stage completed <<<<<
+
+x=========x]
