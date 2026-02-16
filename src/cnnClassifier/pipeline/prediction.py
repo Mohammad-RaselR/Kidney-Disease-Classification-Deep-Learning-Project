@@ -14,10 +14,7 @@ class PredictionPipeline:
 
     def predict(self):
         # Load the same model the pipeline trains (artifacts/training/trained_model.h5)
-        model_path = ROOT / "artifacts" / "training" / "trained_model.h5"
-        if not model_path.exists():
-            model_path = ROOT / "model" / "model.h5"  # fallback
-        model = load_model(str(model_path))
+        model=load_model(os.path.join("model", "trained_model.h5"))
 
         # Load image (absolute path = where decodeImage wrote it, usually cwd)
         imagename = os.path.abspath(self.filename)
