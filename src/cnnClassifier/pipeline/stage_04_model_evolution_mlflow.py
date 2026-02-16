@@ -18,7 +18,7 @@ class ModelEvolutionMlflowPipeline:
         evaluation.save_score()
         dagshub.init(repo_owner='mrhrasel232', repo_name='Kidney-Disease-Classification-Deep-Learning-Project', mlflow=True)
 
-        evaluation.log_into_mlflow()
+        # evaluation.log_into_mlflow()
         
 if __name__=='__main__':
     try:
